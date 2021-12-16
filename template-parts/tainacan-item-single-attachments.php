@@ -3,9 +3,9 @@
 
     // Galley mode is a shortname for when documents and attachments are displayed merged in the same list
     $is_gallery_mode            = true;
-    $hide_file_name             = false;
-    $hide_file_name_main        = false;
-    $hide_file_caption_main     = false;
+    $hide_file_name             = true;
+    $hide_file_name_main        = true;
+    $hide_file_caption_main     = true;
     $hide_file_description_main = true;
 
     global $post;

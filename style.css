@@ -24,6 +24,16 @@
   display: none !important;
 }
 
+.tainacan-items-archive-page .btContentWrap .btPageHeadline.bt_bb_section[class*="light_solid"]::before {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.tainacan-items-archive-page .btContentWrap .btPageHeadline {
+  background-image: url("../assets/images/banner.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
 /* Tainacan Items list customization */
 .theme-items-list,
 .tainacan-modal {
@@ -159,6 +169,20 @@
   --tainacan-secondary: #3d61bf;
   --tainacan-primary: #dde6fd;
   --tainacan-font-family: "Niramit",Arial,Helvetica,sans-serif;
+}
+
+.tainacan-items-single-page .btContentWrap .btPageHeadline.bt_bb_section[class*="light_solid"]::before {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.tainacan-items-single-page .btContentWrap .btPageHeadline {
+  background-image: url("../assets/images/banner.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.tainacan-items-single-page .bt_bb_size_large.bt_bb_headline h1 {
+  font-size: 3.0em;
 }
 
 .tainacan-item-breadcrumb {

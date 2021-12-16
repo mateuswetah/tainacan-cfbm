@@ -21,10 +21,17 @@
                         <?php
                             include(TAINACAN_CFBM_PLUGIN_DIR_PATH . 'template-parts/tainacan-item-single-attachments.php' );
                             do_action( 'tainacan-cfbm-single-item-after-attachments' );
+                        ?>
+                        <br>
+                        <hr>
+                        <br>
+                        <?php
                             include(TAINACAN_CFBM_PLUGIN_DIR_PATH . 'template-parts/tainacan-item-single-metadata.php' );
                             do_action( 'tainacan-cfbm-single-item-after-metadata' );
                         ?>
                     </div>
+                    <br>
+                    <br>
                 </div>
                 <div class="btArticleShareEtc">
                     <div class="btShareColumn">
