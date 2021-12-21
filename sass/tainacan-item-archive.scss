@@ -150,3 +150,11 @@
     top: -2px !important;
     position: relative;
 }
+
+.theme-items-list .tainacan-records-container .tainacan-record .media .list-metadata .metadata-label::after {
+    display: block !important;
+}
+
+.tainacan-items-archive-page .btSiteFooter {
+    display: none;
+}

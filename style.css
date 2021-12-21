@@ -165,6 +165,14 @@
   position: relative;
 }
 
+.theme-items-list .tainacan-records-container .tainacan-record .media .list-metadata .metadata-label::after {
+  display: block !important;
+}
+
+.tainacan-items-archive-page .btSiteFooter {
+  display: none;
+}
+
 .tainacan-items-single-page {
   --tainacan-secondary: #3d61bf;
   --tainacan-primary: #dde6fd;

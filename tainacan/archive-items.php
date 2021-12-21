@@ -3,6 +3,23 @@
 <div class="bt_bb_wrapper">
 	<div class="bt_bb_fe_wrap">
 		<div class="bt_bb_section">
+			<br>
+			<section class="bt_bb_section gutter bt_bb_vertical_align_top">
+				<div class="bt_bb_port port">
+					<div class="bt_bb_cell">
+						<div class="bt_bb_cell_inner">
+							<div class="bt_bb_row">
+								<div class="bt_bb_column">
+									<div class="bt_bb_column_content">
+										<?php tainacan_the_collection_description(); ?>
+									</div><!-- /rowItemContent -->
+								</div><!-- /rowItem -->
+							</div><!-- /boldRow -->
+						</div><!-- boldCellInner -->
+					</div><!-- boldCell -->
+				</div>
+			</section>
+			<br>
 			<div class="bt_bb_port">
 			<?php 
 				tainacan_the_faceted_search([

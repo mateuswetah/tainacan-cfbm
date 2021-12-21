@@ -1,6 +1,6 @@
 {
   "name": "tainacan-cfbm",
-  "version": "0.1.5",
+  "version": "0.1.9",
   "description": "Plugin para integrar o Tainacan ao tema usado no site CFBM - NÃO REMOVER",
   "main": "index.js",
   "scripts": {

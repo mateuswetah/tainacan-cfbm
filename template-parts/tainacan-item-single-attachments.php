@@ -7,6 +7,7 @@
     $hide_file_name_main        = true;
     $hide_file_caption_main     = true;
     $hide_file_description_main = true;
+    $disable_gallery_lightbox   = false;
 
     global $post;
 
@@ -31,6 +32,9 @@
 
                 if ( tainacan_has_document() ) {
                     $is_document_type_attachment = tainacan_get_the_document_type() === 'attachment';
+                    if (tainacan_get_item() && tainacan_get_item()->get_document_mimetype()) {
+                        $disable_gallery_lightbox = tainacan_get_item()->get_document_mimetype() === 'application/pdf'; 
+                    }
                     $media_items_main[] =
                         tainacan_get_the_media_component_slide(array(
                             'media_content' => tainacan_get_the_document(),
@@ -65,6 +69,9 @@
             ) {
                 if ( tainacan_has_document() ) {
                     $is_document_type_attachment = tainacan_get_the_document_type() === 'attachment';
+                    if (tainacan_get_item() && tainacan_get_item()->get_document_mimetype()) {
+                        $disable_gallery_lightbox = tainacan_get_item()->get_document_mimetype() === 'application/pdf'; 
+                    }
                     $media_items_thumbs[] =
                         tainacan_get_the_media_component_slide(array(
                             'media_content' => get_the_post_thumbnail(null, 'tainacan-medium'),
@@ -111,7 +118,8 @@
                             'nextEl' => '.swiper-navigation-next_' . 'tainacan-item-attachments_id-' . $post->ID . '-main',
                             'prevEl' => '.swiper-navigation-prev_' . 'tainacan-item-attachments_id-' . $post->ID . '-main',
                         ) 
-                    ) : ''
+                    ) : '',
+                    'disable_lightbox' => $is_gallery_mode ? $disable_gallery_lightbox : false,
                 )
             );
     ?>
