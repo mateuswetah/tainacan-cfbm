@@ -26,6 +26,15 @@
 
 .tainacan-items-archive-page .btContentWrap .btPageHeadline.bt_bb_section::before {
   background-color: rgba(255, 255, 255, 0.45) !important;
+  background-color: rgba(255, 255, 255, 0.45) !important;
+  content: ' ';
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
 }
 
 .tainacan-items-archive-page .btContentWrap .btPageHeadline {
@@ -180,14 +189,15 @@
   --tainacan-font-family: "Niramit",Arial,Helvetica,sans-serif;
 }
 
-.tainacan-items-single-page .btContentWrap .btPageHeadline.bt_bb_section[class*="light_solid"]::before {
-  background-color: rgba(255, 255, 255, 0.45);
+.tainacan-items-single-page .btContentWrap .btPageHeadline.bt_bb_section::before {
+  background-color: rgba(255, 255, 255, 0.45) !important;
 }
 
 .tainacan-items-single-page .btContentWrap .btPageHeadline {
   background-image: url("../assets/images/banner.jpg") !important;
   background-size: cover !important;
   background-position: center !important;
+  background-attachment: inherit !important;
 }
 
 .tainacan-items-single-page .bt_bb_size_large.bt_bb_headline h1 {
