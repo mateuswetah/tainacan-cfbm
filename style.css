@@ -24,14 +24,15 @@
   display: none !important;
 }
 
-.tainacan-items-archive-page .btContentWrap .btPageHeadline.bt_bb_section[class*="light_solid"]::before {
-  background-color: rgba(255, 255, 255, 0.45);
+.tainacan-items-archive-page .btContentWrap .btPageHeadline.bt_bb_section::before {
+  background-color: rgba(255, 255, 255, 0.45) !important;
 }
 
 .tainacan-items-archive-page .btContentWrap .btPageHeadline {
   background-image: url("../assets/images/banner.jpg") !important;
   background-size: cover !important;
   background-position: center !important;
+  background-attachment: inherit !important;
 }
 
 /* Tainacan Items list customization */
